@@ -1,0 +1,17 @@
+{
+  "name": "test-babel-compile-result",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf ./lib",
+    "build": "babel src --out-dir lib && prettier --write ./lib",
+    "test": "node lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "prettier": "^2.0.4"
+  }
+}
